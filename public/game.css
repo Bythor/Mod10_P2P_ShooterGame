@@ -1,0 +1,56 @@
+html {
+  overflow: hidden;
+}
+
+.Opponent {
+	animation: rotation 3s infinite linear;
+	-webkit-animation: rotation 3s infinite linear;
+}
+
+.paused .Opponent {
+	animation: none;
+	-webkit-animation: none;
+}
+
+li {
+	font-family: fantasy;
+	font-size: medium;	
+	color: blue;
+	list-style: none;
+}
+
+ul {
+	margin-left: 0%;
+	padding: 0%;
+}
+
+@-webkit-keyframes rotation {
+	from {
+		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(359deg);
+		-webkit-transform: rotate(359deg);
+	}
+}
+
+.gamebutton {
+	border: none;
+	background: rgb(157, 180, 245);
+	color: #333;
+	padding: 10px 20px;
+	outline: none;
+	font-family: monospace;
+	cursor: pointer;
+}
+
+.installbutton {
+	border: none ;
+	background: rgb(170, 236, 174);
+	color: #333;
+	padding: 10px 12px;
+	outline: none;
+	font-family: monospace;
+	cursor: pointer;
+}
